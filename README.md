@@ -1,0 +1,2 @@
+# portfoliyo
+web xizmat
