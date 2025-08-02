@@ -1,0 +1,75 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page70067687.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://webxizmat\.uz/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.webxizmat.uz [NC]
+RewriteRule ^(.*)$ https://webxizmat\.uz/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^hero$ page70067687.html [NC]
+RewriteRule ^hero/$ page70067687.html [NC]
+
+RewriteRule ^nav$ page70176047.html [NC]
+RewriteRule ^nav/$ page70176047.html [NC]
+
+RewriteRule ^footer$ page70183497.html [NC]
+RewriteRule ^footer/$ page70183497.html [NC]
+
+RewriteRule ^buyurtmauchunforma$ page70184961.html [NC]
+RewriteRule ^buyurtmauchunforma/$ page70184961.html [NC]
+
+RewriteRule ^bizhaqimizda$ page70188045.html [NC]
+RewriteRule ^bizhaqimizda/$ page70188045.html [NC]
+
+RewriteRule ^portfoliya$ page70188879.html [NC]
+RewriteRule ^portfoliya/$ page70188879.html [NC]
+
+RewriteRule ^hamkorlar$ page70190221.html [NC]
+RewriteRule ^hamkorlar/$ page70190221.html [NC]
+
+RewriteRule ^narxlar$ page70194179.html [NC]
+RewriteRule ^narxlar/$ page70194179.html [NC]
+
+RewriteRule ^mijozlar$ page70216421.html [NC]
+RewriteRule ^mijozlar/$ page70216421.html [NC]
+
+RewriteRule ^chegirmalar$ page70216633.html [NC]
+RewriteRule ^chegirmalar/$ page70216633.html [NC]
+
+RewriteRule ^rusfooter$ page71404677.html [NC]
+RewriteRule ^rusfooter/$ page71404677.html [NC]
+
+RewriteRule ^rustilidahero$ page71647249.html [NC]
+RewriteRule ^rustilidahero/$ page71647249.html [NC]
+
+RewriteRule ^rustilidaforma$ page71647283.html [NC]
+RewriteRule ^rustilidaforma/$ page71647283.html [NC]
+
+RewriteRule ^rustilidabiz-haqimizda$ page71647303.html [NC]
+RewriteRule ^rustilidabiz-haqimizda/$ page71647303.html [NC]
+
+RewriteRule ^rustilidaportfolio$ page71647325.html [NC]
+RewriteRule ^rustilidaportfolio/$ page71647325.html [NC]
+
+RewriteRule ^rushamkorlar$ page71647341.html [NC]
+RewriteRule ^rushamkorlar/$ page71647341.html [NC]
+
+RewriteRule ^rusnarx$ page71647363.html [NC]
+RewriteRule ^rusnarx/$ page71647363.html [NC]
+
+RewriteRule ^rusotziv$ page71647377.html [NC]
+RewriteRule ^rusotziv/$ page71647377.html [NC]
+
+RewriteRule ^ruschegirma$ page71647391.html [NC]
+RewriteRule ^ruschegirma/$ page71647391.html [NC]
+
+
